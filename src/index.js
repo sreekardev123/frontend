@@ -2,12 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import App1 from './App1';
 import reportWebVitals from './reportWebVitals';
+import App2 from './App2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Old App */}
+    <div style={{ marginBottom: '40px' }}>
+      <h2>Laser Cut Name Boards</h2>
+      <App />
+    </div>
+    {/* New App1 */}
+    <div>
+      <h2>SS Name Plates</h2>
+      <App1 />
+    </div>
+    
+    <div>
+      <h2>Acp Sigma Boards</h2>
+      <App2/>
+    </div>
   </React.StrictMode>
 );
 
